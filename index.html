@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Site For Camping</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+<style>
+	body, div, img{ 
+		font-family: "Sawarabi Gothic","Sawarabi Mincho";
+		padding: 0;
+  		margin: 0;
+  		box-sizing : border-box;
+	}
+	.none {
+		padding: 0;
+  		margin: 0;
+  		box-sizing : border-box;
+	}
+	header {
+	    padding: 40px 60px;
+	    height: 170px;
+	}
+	.header_first {
+	    width: 60%;
+	    float: left;
+	}
+	.header_second {
+	    float: right;
+	}
+	.header_nav {
+		clear: both;
+		margin-top: 80px;
+	}
+	.header_nav a:hover {
+	    font-weight: bold;
+	    color: red;
+	}
+	.header_nav a {
+	    color: black;
+	    border-right: 1px solid black;
+	}
+	section#first {
+	    clear: both;
+	    text-align: center;
+	    color: white;
+	}
+	.first-guide {
+	    background-color: #789e78;
+	    padding:50px;
+	}
+	.first-guide .first-subguide {
+	    text-align: left;
+	    margin-top: 70px;
+	    margin-bottom: 80px;
+	    font-size: 19px;
+	}
+	.first-guide h3 {
+	    font-size: 35px;
+	    margin-bottom: 25px;
+	}
+	a.first_guide_details {
+	    padding: 14px;
+	    border: 2px solid white;
+	    color: white;
+	    border-radius: 40px;
+	}
+
+	
+	@media screen and (max-width: 1420px) {
+		.first-guide {
+		    padding:30px;
+		}
+		.first-guide .first-subguide {
+		    text-align: left;
+		    margin-top: 50px;
+		    margin-bottom: 60px;
+		    font-size: 17px;
+		}
+		.first-guide h3 {
+		    font-size: 30px;
+		    margin-bottom: 18px;
+		}
+	}
+	@media screen and (max-width: 1100px) {
+		.first-guide {
+		    padding:30px;
+		}
+		.first-guide .first-subguide {
+		    text-align: left;
+		    margin-top: 30px;
+		    margin-bottom: 40px;
+		    font-size: 15px;
+		}
+		.first-guide h3 {
+		    font-size: 20px;
+		    margin-bottom: 18px;
+		}
+	}
+	@media screen and (max-width: 910px) {
+		.first-guide {
+		    padding:20px;
+		}
+		.first-guide .first-subguide {
+		    text-align: left;
+		    margin-top: 30px;
+		    margin-bottom: 40px;
+		    font-size: 15px;
+		}
+		.first-guide h3 {
+		    font-size: 20px;
+		    margin-bottom: 18px;
+		}
+		.first-guide img {
+			display: none;
+		}
+	}
+
+</style>
+
+</head>
+<body>
+
+<div>
+
+	<header>
+		<div>
+			<div class="header_first">
+				<img src="image/tentLogo.png" alt="Logo" width="90" style="float: left; padding-right: 20px;">
+				<div class="h3 header_title">サンプルキャンプ場</div>
+				<div class="header_subtitle">家族と、恋人と、友達と、手ぶらで気軽にキャンプが楽しめます！</div>
+			</div>
+			<div class="header_second">
+				<div class="header_tel_guide">お電話でのお問い合わせはこちら</div>
+				<div class="header_tel">TEL:00-0000-000</div>
+			</div>
+		</div>
+		<div class="header_nav">
+			<ul class="nav justify-content-center">
+			  <li class="nav-item">
+			    <a class="nav-link active" href="#">ホーム</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">施設のご案内</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">ご利用料金</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">サービス一覧</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">ご予約・お問い合わせ</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">新着情報</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#" style="border-right: none;">スタッフブログ</a>
+			  </li>
+			</ul>
+		</div>
+		<div>
+
+		</div>
+	</header>
+
+	<section id="first">
+		<div class="containe-field">
+			<div class="row">
+				<div class="col-sm-12">
+					<img src="image/night-camping.jpg" alt="キャンプ場風景" width="100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 none first-guide">
+					<h3>手ぶらでキャンプ</h3>
+					<img src="image/sankaku.png" alt="三角旗" width="200">
+					<img src="image/sankaku.png" alt="三角旗" width="200">
+					<div class="first-subguide">このキャンプ場では、準備などの面倒なことや食材を用意する必要は一切ございません。
+					安心して気軽にキャンプを楽しむことができます！</div>
+					<a href="#" class="first_guide_details">
+						詳しくはこちら →
+					</a>
+				</div>
+				<div class="col-sm-6 none">
+					<img src="image/camping.jpg" alt="キャンプ場風景" width="100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 none">
+					<img src="image/river.jpg" alt="川遊び" width="100%">
+				</div>
+				<div class="col-sm-6 none first-guide" style="background-color: #236123;">
+					<h3>自然とのふれあい</h3>
+					<img src="image/sankaku.png" alt="三角旗" width="200">
+					<img src="image/sankaku.png" alt="三角旗" width="200">
+					<div class="first-subguide">四季折々に移り変わる大自然の贅沢な景色の中に溶け込むように
+					設けられたテントで心いくまで堪能していただけます！</div>
+					<a href="#" class="first_guide_details">
+						詳しくはこちら →
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 none first-guide">
+					<h3>神秘的な星空</h3>
+					<img src="image/sankaku.png" alt="三角旗" width="200">
+					<img src="image/sankaku.png" alt="三角旗" width="200">
+					<div class="first-subguide">標高2000メートルにある、サンプルキャンプ場あらは四季を通じて、他では見ることのできない神秘的な星空を体験して下さい！</div>
+					<a href="#" class="first_guide_details">
+						詳しくはこちら →
+					</a>
+				</div>
+				<div class="col-sm-6 none">
+					<img src="image/night.jpg" alt="星空" width="100%">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</div>
+
+</body>
+</html>
